@@ -1,14 +1,3 @@
-C:\Users\ABBOUD Echeikh Bakir\source\repos\RapprocheWebApi\RapprocheWebApi.Entities\bin\Debug\netcoreapp2.1\RapprocheWebApi.Entities.deps.json
-C:\Users\ABBOUD Echeikh Bakir\source\repos\RapprocheWebApi\RapprocheWebApi.Entities\bin\Debug\netcoreapp2.1\RapprocheWebApi.Entities.runtimeconfig.json
-C:\Users\ABBOUD Echeikh Bakir\source\repos\RapprocheWebApi\RapprocheWebApi.Entities\bin\Debug\netcoreapp2.1\RapprocheWebApi.Entities.runtimeconfig.dev.json
-C:\Users\ABBOUD Echeikh Bakir\source\repos\RapprocheWebApi\RapprocheWebApi.Entities\bin\Debug\netcoreapp2.1\RapprocheWebApi.Entities.dll
-C:\Users\ABBOUD Echeikh Bakir\source\repos\RapprocheWebApi\RapprocheWebApi.Entities\bin\Debug\netcoreapp2.1\RapprocheWebApi.Entities.pdb
-C:\Users\ABBOUD Echeikh Bakir\source\repos\RapprocheWebApi\RapprocheWebApi.Entities\obj\Debug\netcoreapp2.1\RapprocheWebApi.Entities.csproj.CoreCompileInputs.cache
-C:\Users\ABBOUD Echeikh Bakir\source\repos\RapprocheWebApi\RapprocheWebApi.Entities\obj\Debug\netcoreapp2.1\RapprocheWebApi.Entities.AssemblyInfoInputs.cache
-C:\Users\ABBOUD Echeikh Bakir\source\repos\RapprocheWebApi\RapprocheWebApi.Entities\obj\Debug\netcoreapp2.1\RapprocheWebApi.Entities.AssemblyInfo.cs
-C:\Users\ABBOUD Echeikh Bakir\source\repos\RapprocheWebApi\RapprocheWebApi.Entities\obj\Debug\netcoreapp2.1\RapprocheWebApi.Entities.dll
-C:\Users\ABBOUD Echeikh Bakir\source\repos\RapprocheWebApi\RapprocheWebApi.Entities\obj\Debug\netcoreapp2.1\RapprocheWebApi.Entities.pdb
-C:\Users\ABBOUD Echeikh Bakir\source\repos\RapprocheWebApi\RapprocheWebApi.Entities\obj\Debug\netcoreapp2.1\RapprocheWebApi.Entities.csprojAssemblyReference.cache
 C:\Users\s.lachi\Source\Repos\RapprocheWebApi\RapprocheWebApi.Entities\bin\Debug\netcoreapp2.1\RapprocheWebApi.Entities.deps.json
 C:\Users\s.lachi\Source\Repos\RapprocheWebApi\RapprocheWebApi.Entities\bin\Debug\netcoreapp2.1\RapprocheWebApi.Entities.runtimeconfig.json
 C:\Users\s.lachi\Source\Repos\RapprocheWebApi\RapprocheWebApi.Entities\bin\Debug\netcoreapp2.1\RapprocheWebApi.Entities.runtimeconfig.dev.json
@@ -20,3 +9,14 @@ C:\Users\s.lachi\Source\Repos\RapprocheWebApi\RapprocheWebApi.Entities\obj\Debug
 C:\Users\s.lachi\Source\Repos\RapprocheWebApi\RapprocheWebApi.Entities\obj\Debug\netcoreapp2.1\RapprocheWebApi.Entities.AssemblyInfo.cs
 C:\Users\s.lachi\Source\Repos\RapprocheWebApi\RapprocheWebApi.Entities\obj\Debug\netcoreapp2.1\RapprocheWebApi.Entities.dll
 C:\Users\s.lachi\Source\Repos\RapprocheWebApi\RapprocheWebApi.Entities\obj\Debug\netcoreapp2.1\RapprocheWebApi.Entities.pdb
+C:\Users\ABBOUD Echeikh Bakir\source\repos\RapprocheWebApi\RapprocheWebApi.Entities\bin\Debug\netcoreapp2.1\RapprocheWebApi.Entities.deps.json
+C:\Users\ABBOUD Echeikh Bakir\source\repos\RapprocheWebApi\RapprocheWebApi.Entities\bin\Debug\netcoreapp2.1\RapprocheWebApi.Entities.runtimeconfig.json
+C:\Users\ABBOUD Echeikh Bakir\source\repos\RapprocheWebApi\RapprocheWebApi.Entities\bin\Debug\netcoreapp2.1\RapprocheWebApi.Entities.runtimeconfig.dev.json
+C:\Users\ABBOUD Echeikh Bakir\source\repos\RapprocheWebApi\RapprocheWebApi.Entities\bin\Debug\netcoreapp2.1\RapprocheWebApi.Entities.dll
+C:\Users\ABBOUD Echeikh Bakir\source\repos\RapprocheWebApi\RapprocheWebApi.Entities\bin\Debug\netcoreapp2.1\RapprocheWebApi.Entities.pdb
+C:\Users\ABBOUD Echeikh Bakir\source\repos\RapprocheWebApi\RapprocheWebApi.Entities\obj\Debug\netcoreapp2.1\RapprocheWebApi.Entities.csprojAssemblyReference.cache
+C:\Users\ABBOUD Echeikh Bakir\source\repos\RapprocheWebApi\RapprocheWebApi.Entities\obj\Debug\netcoreapp2.1\RapprocheWebApi.Entities.csproj.CoreCompileInputs.cache
+C:\Users\ABBOUD Echeikh Bakir\source\repos\RapprocheWebApi\RapprocheWebApi.Entities\obj\Debug\netcoreapp2.1\RapprocheWebApi.Entities.AssemblyInfoInputs.cache
+C:\Users\ABBOUD Echeikh Bakir\source\repos\RapprocheWebApi\RapprocheWebApi.Entities\obj\Debug\netcoreapp2.1\RapprocheWebApi.Entities.AssemblyInfo.cs
+C:\Users\ABBOUD Echeikh Bakir\source\repos\RapprocheWebApi\RapprocheWebApi.Entities\obj\Debug\netcoreapp2.1\RapprocheWebApi.Entities.dll
+C:\Users\ABBOUD Echeikh Bakir\source\repos\RapprocheWebApi\RapprocheWebApi.Entities\obj\Debug\netcoreapp2.1\RapprocheWebApi.Entities.pdb

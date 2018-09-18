@@ -13617,7 +13617,7 @@
       ]
     },
     "System.Xml.XmlSerializer/4.3.0": {
-      "sha512": "VShQJhOxgD/5M2Z1IWm1vMaSqlbjo1zdFf8H7Ahte6bTvSUhUko/gDpAVVhGgGgTDeue4QyNg1fu1Zz2GKSEuQ==",
+      "sha512": "MYoTCP7EZ98RrANESW05J5ZwskKDoN0AuZ06ZflnowE50LTpbR5yRg3tHckTVm5j/m47stuGgCrCHWePyHS70Q==",
       "type": "package",
       "path": "system.xml.xmlserializer/4.3.0",
       "files": [
@@ -13812,23 +13812,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\s.lachi\\.nuget\\packages\\": {},
+    "C:\\Users\\ABBOUD Echeikh Bakir\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\s.lachi\\Source\\Repos\\RapprocheWebApi\\RapprocheWebApi\\RapprocheWebApi.csproj",
+      "projectUniqueName": "C:\\Users\\ABBOUD Echeikh Bakir\\source\\repos\\RapprocheWebApi\\RapprocheWebApi\\RapprocheWebApi.csproj",
       "projectName": "RapprocheWebApi",
-      "projectPath": "C:\\Users\\s.lachi\\Source\\Repos\\RapprocheWebApi\\RapprocheWebApi\\RapprocheWebApi.csproj",
-      "packagesPath": "C:\\Users\\s.lachi\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\s.lachi\\Source\\Repos\\RapprocheWebApi\\RapprocheWebApi\\obj\\",
+      "projectPath": "C:\\Users\\ABBOUD Echeikh Bakir\\source\\repos\\RapprocheWebApi\\RapprocheWebApi\\RapprocheWebApi.csproj",
+      "packagesPath": "C:\\Users\\ABBOUD Echeikh Bakir\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\ABBOUD Echeikh Bakir\\source\\repos\\RapprocheWebApi\\RapprocheWebApi\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\s.lachi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\ABBOUD Echeikh Bakir\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -13841,14 +13841,14 @@
       "frameworks": {
         "netcoreapp2.1": {
           "projectReferences": {
-            "C:\\Users\\s.lachi\\Source\\Repos\\RapprocheWebApi\\RapprocheWebApi.BLL\\RapprocheWebApi.BLL.csproj": {
-              "projectPath": "C:\\Users\\s.lachi\\Source\\Repos\\RapprocheWebApi\\RapprocheWebApi.BLL\\RapprocheWebApi.BLL.csproj"
+            "C:\\Users\\ABBOUD Echeikh Bakir\\source\\repos\\RapprocheWebApi\\RapprocheWebApi.BLL\\RapprocheWebApi.BLL.csproj": {
+              "projectPath": "C:\\Users\\ABBOUD Echeikh Bakir\\source\\repos\\RapprocheWebApi\\RapprocheWebApi.BLL\\RapprocheWebApi.BLL.csproj"
             },
-            "C:\\Users\\s.lachi\\Source\\Repos\\RapprocheWebApi\\RapprocheWebApi.DAL\\RapprocheWebApi.DAL.csproj": {
-              "projectPath": "C:\\Users\\s.lachi\\Source\\Repos\\RapprocheWebApi\\RapprocheWebApi.DAL\\RapprocheWebApi.DAL.csproj"
+            "C:\\Users\\ABBOUD Echeikh Bakir\\source\\repos\\RapprocheWebApi\\RapprocheWebApi.DAL\\RapprocheWebApi.DAL.csproj": {
+              "projectPath": "C:\\Users\\ABBOUD Echeikh Bakir\\source\\repos\\RapprocheWebApi\\RapprocheWebApi.DAL\\RapprocheWebApi.DAL.csproj"
             },
-            "C:\\Users\\s.lachi\\Source\\Repos\\RapprocheWebApi\\RapprocheWebApi.Entities\\RapprocheWebApi.Entities.csproj": {
-              "projectPath": "C:\\Users\\s.lachi\\Source\\Repos\\RapprocheWebApi\\RapprocheWebApi.Entities\\RapprocheWebApi.Entities.csproj"
+            "C:\\Users\\ABBOUD Echeikh Bakir\\source\\repos\\RapprocheWebApi\\RapprocheWebApi.Entities\\RapprocheWebApi.Entities.csproj": {
+              "projectPath": "C:\\Users\\ABBOUD Echeikh Bakir\\source\\repos\\RapprocheWebApi\\RapprocheWebApi.Entities\\RapprocheWebApi.Entities.csproj"
             }
           }
         }
