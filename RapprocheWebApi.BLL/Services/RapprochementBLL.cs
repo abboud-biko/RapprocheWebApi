@@ -43,7 +43,8 @@ namespace RapprocheWebApi.BLL.Services
                 .Include(a => a.Offre.NiveauInstruction)
                 .Include(a => a.Offre.NiveauQualification)
                 .Include(a => a.Offre.TypeContrat.CategorieContrat.Dispositif)
-                .Take(10);
+                //.Take(10)
+                ;
             return rapprochements.ToList();
   
 
