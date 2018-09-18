@@ -5,6 +5,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.All" Version="2.1.4" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\RapprocheWebApi.DAL\RapprocheWebApi.DAL.csproj" />
     <ProjectReference Include="..\RapprocheWebApi.Entities\RapprocheWebApi.Entities.csproj" />
   </ItemGroup>

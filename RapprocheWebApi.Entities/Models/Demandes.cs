@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 
 namespace RapprocheWebApi.Entities.Models
@@ -42,20 +43,35 @@ namespace RapprocheWebApi.Entities.Models
         public bool IsSatisfaite { get; set; }
         public bool? ByOnline { get; set; }
 
+        
         public Demandeurs Demandeur { get; set; }
+        [JsonIgnore]
         public Dispositifs Dispositif { get; set; }
+        [JsonIgnore]
         public Appellations FonctionActuelle { get; set; }
+        [JsonIgnore]
         public Appellations MetierPrincipal { get; set; }
+        [JsonIgnore]
         public NaturesDemandes NatureDemande { get; set; }
+        [JsonIgnore]
         public Structures Structure { get; set; }
+        [JsonIgnore]
         public TypesContrats TypeContrat { get; set; }
+        [JsonIgnore]
         public Intervenants User { get; set; }
+        [JsonIgnore]
         public ICollection<Convocations> Convocations { get; set; }
+        [JsonIgnore]
         public ICollection<ConvocationsEnLigne> ConvocationsEnLigne { get; set; }
+        [JsonIgnore]
         public ICollection<DemandeAppellationAlternative> DemandeAppellationAlternative { get; set; }
+        [JsonIgnore]
         public ICollection<EtatsDemandes> EtatsDemandes { get; set; }
+        [JsonIgnore]
         public ICollection<Orientations> Orientations { get; set; }
+        [JsonIgnore]
         public ICollection<Postulations> Postulations { get; set; }
+        [JsonIgnore]
         public ICollection<Rapprochements> Rapprochements { get; set; }
     }
 }

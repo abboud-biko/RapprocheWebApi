@@ -363,6 +363,7 @@
       },
       "RapprocheWebApi.BLL/1.0.0": {
         "dependencies": {
+          "Microsoft.AspNetCore.All": "2.1.4",
           "RapprocheWebApi.DAL": "1.0.0",
           "RapprocheWebApi.Entities": "1.0.0"
         },

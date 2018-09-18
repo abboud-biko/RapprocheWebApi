@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 
 namespace RapprocheWebApi.Entities.Models
@@ -52,17 +53,29 @@ namespace RapprocheWebApi.Entities.Models
         public bool? ByOnline { get; set; }
         public DateTime? DateEnregistrement { get; set; }
 
+        [JsonIgnore]
         public Communes CommuneNaissance { get; set; }
+        [JsonIgnore]
         public OrganismesAutresDispositifs EnregistrementCadreAutreDispositif { get; set; }
+        [JsonIgnore]
         public Intervenants IntervenantUser { get; set; }
+        [JsonIgnore]
         public Pays PaysNaissance { get; set; }
+        [JsonIgnore]
         public Quartiers Quartier { get; set; }
+        [JsonIgnore]
         public SituationsServiceMilitaires SituationServiceMilitaire { get; set; }
+        [JsonIgnore]
         public TypesPiecesIdentites TypePieceIdentite { get; set; }
+        [JsonIgnore]
         public Wilayas WilayaNaissance { get; set; }
+        [JsonIgnore]
         public Profils Profils { get; set; }
+        [JsonIgnore]
         public ICollection<Demandes> Demandes { get; set; }
+        [JsonIgnore]
         public ICollection<DemandeursStructures> DemandeursStructures { get; set; }
+        [JsonIgnore]
         public ICollection<Handicaps> Handicaps { get; set; }
     }
 }

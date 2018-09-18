@@ -1,4 +1,6 @@
 C:\Users\ABBOUD Echeikh Bakir\source\repos\RapprocheWebApi\RapprocheWebApi.BLL\bin\Debug\netcoreapp2.1\RapprocheWebApi.BLL.deps.json
+C:\Users\ABBOUD Echeikh Bakir\source\repos\RapprocheWebApi\RapprocheWebApi.BLL\bin\Debug\netcoreapp2.1\RapprocheWebApi.BLL.runtimeconfig.json
+C:\Users\ABBOUD Echeikh Bakir\source\repos\RapprocheWebApi\RapprocheWebApi.BLL\bin\Debug\netcoreapp2.1\RapprocheWebApi.BLL.runtimeconfig.dev.json
 C:\Users\ABBOUD Echeikh Bakir\source\repos\RapprocheWebApi\RapprocheWebApi.BLL\bin\Debug\netcoreapp2.1\RapprocheWebApi.BLL.dll
 C:\Users\ABBOUD Echeikh Bakir\source\repos\RapprocheWebApi\RapprocheWebApi.BLL\bin\Debug\netcoreapp2.1\RapprocheWebApi.BLL.pdb
 C:\Users\ABBOUD Echeikh Bakir\source\repos\RapprocheWebApi\RapprocheWebApi.BLL\bin\Debug\netcoreapp2.1\RapprocheWebApi.DAL.dll

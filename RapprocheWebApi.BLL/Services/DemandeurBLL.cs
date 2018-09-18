@@ -20,16 +20,16 @@ namespace RapprocheWebApi.BLL.Services
 
         public List<Demandeurs> GetAllDemandeurs()
         {
-            IQueryable<Demandeurs> demandeurs = _unitOfWork.Demandeurs.Get();
+            IQueryable<Demandeurs> demandeurs = _unitOfWork.Demandeurs.GetAll();
             return demandeurs.ToList();
 
         }
 
 
 
-        public List<Demandeurs> GetDemandeur(Guid wilayaId)
+        public List<Demandeurs> GetDemandeur(Guid id)
         {
-            IQueryable<Demandeurs> demandeurs = _unitOfWork.Demandeurs.Get(a => a.WilayaNaissanceId == wilayaId);
+            IQueryable<Demandeurs> demandeurs = _unitOfWork.Demandeurs.FindBy(a => a.WilayaNaissanceId == id).Take(5);
             return demandeurs.ToList();
         }
     }

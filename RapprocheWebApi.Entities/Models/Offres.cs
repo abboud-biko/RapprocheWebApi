@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 
 namespace RapprocheWebApi.Entities.Models
@@ -71,30 +72,55 @@ namespace RapprocheWebApi.Entities.Models
         public Guid? SharedBy { get; set; }
         public bool? CanShared { get; set; }
 
+        [JsonIgnore]
         public Communes Commune { get; set; }
+        [JsonIgnore]
         public Employeurs Employeur { get; set; }
+        [JsonIgnore]
         public Appellations MetierOffert { get; set; }
+        [JsonIgnore]
         public NiveauxInstructions NiveauInstruction { get; set; }
+        [JsonIgnore]
         public NiveauxQualifications NiveauQualification { get; set; }
+        [JsonIgnore]
         public Offres OffreOriginale { get; set; }
+        [JsonIgnore]
         public SituationsServiceMilitaires SituationServiceMilitaire { get; set; }
+        [JsonIgnore]
         public Structures Structure { get; set; }
+        [JsonIgnore]
         public TypesContrats TypeContrat { get; set; }
+        [JsonIgnore]
         public Intervenants User { get; set; }
+        [JsonIgnore]
         public Visites Visite { get; set; }
+        [JsonIgnore]
         public ICollection<Convocations> Convocations { get; set; }
+        [JsonIgnore]
         public ICollection<ConvocationsEnLigne> ConvocationsEnLigne { get; set; }
+        [JsonIgnore]
         public ICollection<Offres> InverseOffreOriginale { get; set; }
+        [JsonIgnore]
         public ICollection<OffreActiviteBase> OffreActiviteBase { get; set; }
+        [JsonIgnore]
         public ICollection<OffreActiviteSpecifique> OffreActiviteSpecifique { get; set; }
+        [JsonIgnore]
         public ICollection<OffreCompetenceBase> OffreCompetenceBase { get; set; }
+        [JsonIgnore]
         public ICollection<OffreCompetenceSpecifique> OffreCompetenceSpecifique { get; set; }
+        [JsonIgnore]
         public ICollection<OffreOptionDiplome> OffreOptionDiplome { get; set; }
+        [JsonIgnore]
         public ICollection<OffreSpecialiteDiplome> OffreSpecialiteDiplome { get; set; }
+        [JsonIgnore]
         public ICollection<OffreStructureCompensation> OffreStructureCompensation { get; set; }
+        [JsonIgnore]
         public ICollection<OffresLangues> OffresLangues { get; set; }
+        [JsonIgnore]
         public ICollection<Orientations> Orientations { get; set; }
+        [JsonIgnore]
         public ICollection<Postulations> Postulations { get; set; }
+        [JsonIgnore]
         public ICollection<Rapprochements> Rapprochements { get; set; }
     }
 }

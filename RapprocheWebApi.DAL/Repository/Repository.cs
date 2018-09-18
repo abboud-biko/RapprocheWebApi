@@ -1,64 +1,88 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using RapprocheWebApi.DAL.UnitOfWork;
 using RapprocheWebApi.Entities.Models;
 using System;
 using System.Collections.Generic;
+using System.Data.Common;
+using System.Data.SqlClient;
 using System.Linq;
+using System.Reflection;
 using System.Text;
+using System.Threading.Tasks;
 
-namespace RapprocheWebApi.DAL.Repository
+namespace AnemAPI.DAL.Repository
 {
-    public class Repository<T> : IRepository<T> where T : class
+    public class Repository<TEntity> : IRepository<TEntity>
+     where TEntity : class
     {
-        private readonly AnemContext _context;
-        private DbSet<T> _dbset;
 
-        public Repository(AnemContext context)
+        private readonly AnemContext _dbContext;
+
+
+        private DbSet<TEntity> dbset;
+        public Repository(AnemContext dbContext)
         {
-            _context = context;
-            _dbset = _context.Set<T>();
-        }
-        public void Add(T entity)
-        {
-            if( entity == null )
-            {
-                throw new ArgumentNullException("entity");
-            }
-            _dbset.Add(entity);
+            _dbContext = dbContext;
+            dbset = _dbContext.Set<TEntity>();
         }
 
-        public void Delete(T entity)
+        public TEntity Create(TEntity entity)
         {
             if (entity == null)
             {
                 throw new ArgumentNullException("entity");
             }
-            T existing = _dbset.Find(entity);
-            if (existing != null) _dbset.Remove(existing);
+            dbset.Add(entity);
+            return entity;
         }
 
-        public IQueryable<T> Get()
-        {
-            return _dbset.AsQueryable();
-        }
-
-        public IQueryable<T> Get(System.Linq.Expressions.Expression<Func<T, bool>> predicate)
-        {
-            return _dbset.Where(predicate).AsQueryable();
-        }
-
-        public void Update(T entity)
+        public void Delete(TEntity entity)
         {
             if (entity == null)
             {
                 throw new ArgumentNullException("entity");
             }
-            _dbset.Update(entity);
+            dbset.Remove(entity);
         }
+
+        public IQueryable<TEntity> GetAll()
+        {
+            return dbset.AsQueryable();
+        }
+
+        public TEntity GetById(Guid? id)
+        {
+
+            return dbset.Find(id);
+        }
+
+        public IQueryable<TEntity> FindBy(System.Linq.Expressions.Expression<Func<TEntity, bool>> predicate)
+        {
+
+            IQueryable<TEntity> query = _dbContext.Set<TEntity>().Where(predicate);
+            return query;
+        }
+
+        public void Update(TEntity entity)
+        {
+
+
+            if (entity == null)
+            {
+                throw new ArgumentNullException("entity");
+            }
+            // _dbContext.Attach(entity);
+            _dbContext.Entry(entity).State = EntityState.Deleted;
+            dbset.Update(entity);
+
+            // _dbContext.Attach(entity);
+        }
+        
 
         private void SaveChange()
         {
-            _context.SaveChanges();
+
+            _dbContext.SaveChanges();
         }
+
     }
 }

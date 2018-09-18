@@ -5,9 +5,9 @@ using System.Text;
 
 namespace RapprocheWebApi.BLL.Services
 {
-    public interface IDemandeurBLL
+    public interface IRapprochementBLL
     {
-        List<Demandeurs> GetAllDemandeurs();
-        List<Demandeurs> GetDemandeur(Guid id);
+        List<Rapprochements> GetAllRapprochements();
+        List<Rapprochements> GetRapprochementsByDate(DateTime date);
     }
 }

@@ -14,27 +14,40 @@ namespace RapprocheWebApi.Controllers
     public class ValuesController : ControllerBase
     {
         private IDemandeurBLL _demandeurBLL;
+        private IRapprochementBLL _rapprochementBLL;
 
-        public ValuesController(IDemandeurBLL demandeurBLL)
+        public ValuesController(IDemandeurBLL demandeurBLL,IRapprochementBLL rapprochementBLL)
         {
             _demandeurBLL = demandeurBLL;
+            _rapprochementBLL = rapprochementBLL;
         }
 
         // GET api/values
         [HttpGet]
+        public IActionResult Get()
+        {
+            var list = _rapprochementBLL.GetAllRapprochements();
+            return Ok(JsonConvert.SerializeObject(list));
+        }
+
+        // GET api/values/5555
+        [HttpGet("{date}")]
+        public IActionResult Get(DateTime date)
+        {
+            var list = _rapprochementBLL.GetRapprochementsByDate(date);
+            return Ok(JsonConvert.SerializeObject(list));
+            //return new string[] { "value1", "value2" };
+        }
+
+        // GET api/values/5555
+        [HttpGet("{id}")]
         public IActionResult Get(Guid id)
         {
             var list = _demandeurBLL.GetDemandeur(id);
             return Ok(JsonConvert.SerializeObject(list));
             //return new string[] { "value1", "value2" };
         }
-
-        // GET api/values/5
-        [HttpGet("{id}")]
-        public ActionResult<string> Get(int id)
-        {
-            return "value";
-        }
+        
 
         // POST api/values
         [HttpPost]

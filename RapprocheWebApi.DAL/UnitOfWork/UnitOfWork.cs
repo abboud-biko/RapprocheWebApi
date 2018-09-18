@@ -1,4 +1,4 @@
-﻿using RapprocheWebApi.DAL.Repository;
+﻿using AnemAPI.DAL.Repository;
 using RapprocheWebApi.Entities.Models;
 using System;
 using System.Collections.Generic;
@@ -29,7 +29,20 @@ namespace RapprocheWebApi.DAL.UnitOfWork
             }
         }
 
-        IRepository<Demandeurs> IUnitOfWork.Demandeurs => throw new NotImplementedException();
+        IRepository<Rapprochements> _rapprochements;
+
+        public IRepository<Rapprochements> Rapprochements
+        {
+            get
+            {
+                if (_rapprochements == null)
+                {
+                    _rapprochements = new Repository<Rapprochements>(_context);
+                }
+                return _rapprochements;
+            }
+        }
+
 
         public void Dispose()
         {

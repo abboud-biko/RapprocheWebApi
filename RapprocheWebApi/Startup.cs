@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using AnemAPI.DAL.Repository;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -11,7 +12,6 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using RapprocheWebApi.BLL.Services;
-using RapprocheWebApi.DAL.Repository;
 using RapprocheWebApi.DAL.UnitOfWork;
 
 namespace RapprocheWebApi
@@ -33,6 +33,7 @@ namespace RapprocheWebApi
 
             services.AddTransient<IUnitOfWork, UnitOfWork>();
             services.AddScoped<IDemandeurBLL, DemandeurBLL>();
+            services.AddScoped<IRapprochementBLL, RapprochementBLL>();
             services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
 
             services.AddMvc();
