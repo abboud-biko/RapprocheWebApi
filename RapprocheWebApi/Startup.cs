@@ -7,12 +7,14 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using RapprocheWebApi.BLL.Services;
 using RapprocheWebApi.DAL.UnitOfWork;
+using RapprocheWebApi.Entities.Models;
 using Swashbuckle.AspNetCore.Swagger;
 
 namespace RapprocheWebApi
@@ -33,7 +35,6 @@ namespace RapprocheWebApi
             services.AddCors();
 
             services.AddTransient<IUnitOfWork, UnitOfWork>();
-            services.AddScoped<IDemandeurBLL, DemandeurBLL>();
             services.AddScoped<IRapprochementBLL, RapprochementBLL>();
             services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
 

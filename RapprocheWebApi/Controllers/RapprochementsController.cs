@@ -11,23 +11,19 @@ namespace RapprocheWebApi.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class ValuesController : ControllerBase
+    public class RapprochementsController : ControllerBase
     {
-        private IDemandeurBLL _demandeurBLL;
         private IRapprochementBLL _rapprochementBLL;
 
-        public ValuesController(IDemandeurBLL demandeurBLL,IRapprochementBLL rapprochementBLL)
+        public RapprochementsController(IRapprochementBLL rapprochementBLL)
         {
-            _demandeurBLL = demandeurBLL;
             _rapprochementBLL = rapprochementBLL;
         }
 
         // GET api/values
         [HttpGet]
-        public IActionResult Get()
+        public void Get()
         {
-            var list = _rapprochementBLL.GetAllRapprochements();
-            return Ok(JsonConvert.SerializeObject(list));
         }
 
         // GET api/values/datetime
@@ -41,9 +37,8 @@ namespace RapprocheWebApi.Controllers
 
         // POST api/values
         [HttpPost]
-        public IActionResult Post([FromBody] JObject value)
+        public void Post([FromBody] JObject value)
         {
-            return Ok(value);
         }
 
         // PUT api/values/5

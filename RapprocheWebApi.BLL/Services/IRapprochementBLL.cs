@@ -7,7 +7,6 @@ namespace RapprocheWebApi.BLL.Services
 {
     public interface IRapprochementBLL
     {
-        List<Rapprochements> GetAllRapprochements();
         List<Rapprochements> GetRapprochementsByDate(DateTime date);
     }
 }
