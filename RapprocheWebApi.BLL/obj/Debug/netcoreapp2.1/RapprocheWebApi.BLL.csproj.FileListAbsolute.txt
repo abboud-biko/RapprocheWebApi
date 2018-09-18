@@ -14,3 +14,19 @@ C:\Users\ABBOUD Echeikh Bakir\source\repos\RapprocheWebApi\RapprocheWebApi.BLL\o
 C:\Users\ABBOUD Echeikh Bakir\source\repos\RapprocheWebApi\RapprocheWebApi.BLL\obj\Debug\netcoreapp2.1\RapprocheWebApi.BLL.csproj.CopyComplete
 C:\Users\ABBOUD Echeikh Bakir\source\repos\RapprocheWebApi\RapprocheWebApi.BLL\obj\Debug\netcoreapp2.1\RapprocheWebApi.BLL.dll
 C:\Users\ABBOUD Echeikh Bakir\source\repos\RapprocheWebApi\RapprocheWebApi.BLL\obj\Debug\netcoreapp2.1\RapprocheWebApi.BLL.pdb
+C:\Users\s.lachi\Source\Repos\RapprocheWebApi\RapprocheWebApi.BLL\bin\Debug\netcoreapp2.1\RapprocheWebApi.BLL.deps.json
+C:\Users\s.lachi\Source\Repos\RapprocheWebApi\RapprocheWebApi.BLL\bin\Debug\netcoreapp2.1\RapprocheWebApi.BLL.runtimeconfig.json
+C:\Users\s.lachi\Source\Repos\RapprocheWebApi\RapprocheWebApi.BLL\bin\Debug\netcoreapp2.1\RapprocheWebApi.BLL.runtimeconfig.dev.json
+C:\Users\s.lachi\Source\Repos\RapprocheWebApi\RapprocheWebApi.BLL\bin\Debug\netcoreapp2.1\RapprocheWebApi.BLL.dll
+C:\Users\s.lachi\Source\Repos\RapprocheWebApi\RapprocheWebApi.BLL\bin\Debug\netcoreapp2.1\RapprocheWebApi.BLL.pdb
+C:\Users\s.lachi\Source\Repos\RapprocheWebApi\RapprocheWebApi.BLL\bin\Debug\netcoreapp2.1\RapprocheWebApi.DAL.dll
+C:\Users\s.lachi\Source\Repos\RapprocheWebApi\RapprocheWebApi.BLL\bin\Debug\netcoreapp2.1\RapprocheWebApi.Entities.dll
+C:\Users\s.lachi\Source\Repos\RapprocheWebApi\RapprocheWebApi.BLL\bin\Debug\netcoreapp2.1\RapprocheWebApi.DAL.pdb
+C:\Users\s.lachi\Source\Repos\RapprocheWebApi\RapprocheWebApi.BLL\bin\Debug\netcoreapp2.1\RapprocheWebApi.Entities.pdb
+C:\Users\s.lachi\Source\Repos\RapprocheWebApi\RapprocheWebApi.BLL\obj\Debug\netcoreapp2.1\RapprocheWebApi.BLL.csprojAssemblyReference.cache
+C:\Users\s.lachi\Source\Repos\RapprocheWebApi\RapprocheWebApi.BLL\obj\Debug\netcoreapp2.1\RapprocheWebApi.BLL.csproj.CoreCompileInputs.cache
+C:\Users\s.lachi\Source\Repos\RapprocheWebApi\RapprocheWebApi.BLL\obj\Debug\netcoreapp2.1\RapprocheWebApi.BLL.AssemblyInfoInputs.cache
+C:\Users\s.lachi\Source\Repos\RapprocheWebApi\RapprocheWebApi.BLL\obj\Debug\netcoreapp2.1\RapprocheWebApi.BLL.AssemblyInfo.cs
+C:\Users\s.lachi\Source\Repos\RapprocheWebApi\RapprocheWebApi.BLL\obj\Debug\netcoreapp2.1\RapprocheWebApi.BLL.csproj.CopyComplete
+C:\Users\s.lachi\Source\Repos\RapprocheWebApi\RapprocheWebApi.BLL\obj\Debug\netcoreapp2.1\RapprocheWebApi.BLL.dll
+C:\Users\s.lachi\Source\Repos\RapprocheWebApi\RapprocheWebApi.BLL\obj\Debug\netcoreapp2.1\RapprocheWebApi.BLL.pdb

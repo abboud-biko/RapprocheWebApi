@@ -29,6 +29,10 @@ namespace RapprocheWebApi.BLL.Services
         {
             IQueryable<Rapprochements> rapprochements = _unitOfWork.Rapprochements.FindBy(
                 d => d.Offre.DateInscription >= date 
+                && d.Offre.Etat == 1
+                && d.Offre.NombrePlacesLibres > 0
+                && d.Offre.IsRechercheActive == false
+                && d.Offre.IsValide == true
                 && d.Demande.Demandeur.Email != null
                 && d.Demande.Demandeur.Email != "")
                 .Include(a => a.Offre)

@@ -12,3 +12,17 @@ C:\Users\ABBOUD Echeikh Bakir\source\repos\RapprocheWebApi\RapprocheWebApi.DAL\o
 C:\Users\ABBOUD Echeikh Bakir\source\repos\RapprocheWebApi\RapprocheWebApi.DAL\obj\Debug\netcoreapp2.1\RapprocheWebApi.DAL.csproj.CopyComplete
 C:\Users\ABBOUD Echeikh Bakir\source\repos\RapprocheWebApi\RapprocheWebApi.DAL\obj\Debug\netcoreapp2.1\RapprocheWebApi.DAL.dll
 C:\Users\ABBOUD Echeikh Bakir\source\repos\RapprocheWebApi\RapprocheWebApi.DAL\obj\Debug\netcoreapp2.1\RapprocheWebApi.DAL.pdb
+C:\Users\s.lachi\Source\Repos\RapprocheWebApi\RapprocheWebApi.DAL\bin\Debug\netcoreapp2.1\RapprocheWebApi.DAL.deps.json
+C:\Users\s.lachi\Source\Repos\RapprocheWebApi\RapprocheWebApi.DAL\bin\Debug\netcoreapp2.1\RapprocheWebApi.DAL.runtimeconfig.json
+C:\Users\s.lachi\Source\Repos\RapprocheWebApi\RapprocheWebApi.DAL\bin\Debug\netcoreapp2.1\RapprocheWebApi.DAL.runtimeconfig.dev.json
+C:\Users\s.lachi\Source\Repos\RapprocheWebApi\RapprocheWebApi.DAL\bin\Debug\netcoreapp2.1\RapprocheWebApi.DAL.dll
+C:\Users\s.lachi\Source\Repos\RapprocheWebApi\RapprocheWebApi.DAL\bin\Debug\netcoreapp2.1\RapprocheWebApi.DAL.pdb
+C:\Users\s.lachi\Source\Repos\RapprocheWebApi\RapprocheWebApi.DAL\bin\Debug\netcoreapp2.1\RapprocheWebApi.Entities.dll
+C:\Users\s.lachi\Source\Repos\RapprocheWebApi\RapprocheWebApi.DAL\bin\Debug\netcoreapp2.1\RapprocheWebApi.Entities.pdb
+C:\Users\s.lachi\Source\Repos\RapprocheWebApi\RapprocheWebApi.DAL\obj\Debug\netcoreapp2.1\RapprocheWebApi.DAL.csprojAssemblyReference.cache
+C:\Users\s.lachi\Source\Repos\RapprocheWebApi\RapprocheWebApi.DAL\obj\Debug\netcoreapp2.1\RapprocheWebApi.DAL.csproj.CoreCompileInputs.cache
+C:\Users\s.lachi\Source\Repos\RapprocheWebApi\RapprocheWebApi.DAL\obj\Debug\netcoreapp2.1\RapprocheWebApi.DAL.AssemblyInfoInputs.cache
+C:\Users\s.lachi\Source\Repos\RapprocheWebApi\RapprocheWebApi.DAL\obj\Debug\netcoreapp2.1\RapprocheWebApi.DAL.AssemblyInfo.cs
+C:\Users\s.lachi\Source\Repos\RapprocheWebApi\RapprocheWebApi.DAL\obj\Debug\netcoreapp2.1\RapprocheWebApi.DAL.csproj.CopyComplete
+C:\Users\s.lachi\Source\Repos\RapprocheWebApi\RapprocheWebApi.DAL\obj\Debug\netcoreapp2.1\RapprocheWebApi.DAL.dll
+C:\Users\s.lachi\Source\Repos\RapprocheWebApi\RapprocheWebApi.DAL\obj\Debug\netcoreapp2.1\RapprocheWebApi.DAL.pdb
