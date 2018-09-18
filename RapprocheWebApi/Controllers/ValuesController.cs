@@ -30,22 +30,12 @@ namespace RapprocheWebApi.Controllers
             return Ok(JsonConvert.SerializeObject(list));
         }
 
-        // GET api/values/5555
+        // GET api/values/datetime
         [HttpGet("{date}")]
         public IActionResult Get(DateTime date)
         {
             var list = _rapprochementBLL.GetRapprochementsByDate(date);
             return Ok(JsonConvert.SerializeObject(list));
-            //return new string[] { "value1", "value2" };
-        }
-
-        // GET api/values/5555
-        [HttpGet("{id}")]
-        public IActionResult Get(Guid id)
-        {
-            var list = _demandeurBLL.GetDemandeur(id);
-            return Ok(JsonConvert.SerializeObject(list));
-            //return new string[] { "value1", "value2" };
         }
         
 
@@ -53,7 +43,6 @@ namespace RapprocheWebApi.Controllers
         [HttpPost]
         public IActionResult Post([FromBody] JObject value)
         {
-            int a = 50;
             return Ok(value);
         }
 

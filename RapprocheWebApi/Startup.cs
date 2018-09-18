@@ -13,6 +13,7 @@ using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using RapprocheWebApi.BLL.Services;
 using RapprocheWebApi.DAL.UnitOfWork;
+using Swashbuckle.AspNetCore.Swagger;
 
 namespace RapprocheWebApi
 {
@@ -36,7 +37,13 @@ namespace RapprocheWebApi
             services.AddScoped<IRapprochementBLL, RapprochementBLL>();
             services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
 
+            services.AddSwaggerGen(c =>
+            {
+                c.SwaggerDoc("v1", new Info { Title = "My API", Version = "v1" });
+            });
+
             services.AddMvc();
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -50,6 +57,15 @@ namespace RapprocheWebApi
             {
                 app.UseHsts();
             }
+
+            app.UseSwagger();
+
+            //Enable middleware to serve swagger-ui (HTML, JS, CSS, etc.), specifying the Swagger JSON endpoint.
+            app.UseSwaggerUI(c =>
+            {
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "My API V1");
+            });
+
 
             app.UseHttpsRedirection();
             app.UseMvc();
