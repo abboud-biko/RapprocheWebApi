@@ -53,7 +53,7 @@ namespace RapprocheWebApi.Controllers
         [HttpPost]
         public IActionResult Post([FromBody] JObject value)
         {
-            string name = "bakir";
+            int a = 50;
             return Ok(value);
         }
 
