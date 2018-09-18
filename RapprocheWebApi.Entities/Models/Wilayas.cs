@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 
 namespace RapprocheWebApi.Entities.Models
@@ -14,19 +15,19 @@ namespace RapprocheWebApi.Entities.Models
             EmployeursAvalider = new HashSet<EmployeursAvalider>();
             Structures = new HashSet<Structures>();
         }
-
+        [JsonIgnore]
         public Guid WilayaId { get; set; }
         public string IntituleAr { get; set; }
-        public string IntituleFr { get; set; }
-        public string Code { get; set; }
-        public Guid PaysId { get; set; }
+        public string IntituleFr { get; set; }[JsonIgnore]
+        public string Code { get; set; }[JsonIgnore]
+        public Guid PaysId { get; set; }[JsonIgnore]
 
-        public Pays Pays { get; set; }
-        public ICollection<Communes> Communes { get; set; }
-        public ICollection<Demandeurs> Demandeurs { get; set; }
-        public ICollection<DemandeursAvalider> DemandeursAvalider { get; set; }
-        public ICollection<Employeurs> Employeurs { get; set; }
-        public ICollection<EmployeursAvalider> EmployeursAvalider { get; set; }
+        public Pays Pays { get; set; }[JsonIgnore]
+        public ICollection<Communes> Communes { get; set; }[JsonIgnore]
+        public ICollection<Demandeurs> Demandeurs { get; set; }[JsonIgnore]
+        public ICollection<DemandeursAvalider> DemandeursAvalider { get; set; }[JsonIgnore]
+        public ICollection<Employeurs> Employeurs { get; set; }[JsonIgnore]
+        public ICollection<EmployeursAvalider> EmployeursAvalider { get; set; }[JsonIgnore]
         public ICollection<Structures> Structures { get; set; }
     }
 }

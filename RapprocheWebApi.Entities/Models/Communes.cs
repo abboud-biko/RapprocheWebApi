@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 
 namespace RapprocheWebApi.Entities.Models
@@ -15,20 +16,20 @@ namespace RapprocheWebApi.Entities.Models
             Offres = new HashSet<Offres>();
             SecteursUrbains = new HashSet<SecteursUrbains>();
         }
-
+        [JsonIgnore]
         public Guid CommuneId { get; set; }
         public string IntituleAr { get; set; }
-        public string IntituleFr { get; set; }
-        public Guid WilayaId { get; set; }
+        public string IntituleFr { get; set; }[JsonIgnore]
+        public Guid WilayaId { get; set; }[JsonIgnore]
         public string Code { get; set; }
 
-        public Wilayas Wilaya { get; set; }
-        public ICollection<CodesPostaux> CodesPostaux { get; set; }
-        public ICollection<Demandeurs> Demandeurs { get; set; }
-        public ICollection<DemandeursAvalider> DemandeursAvalider { get; set; }
-        public ICollection<Employeurs> Employeurs { get; set; }
-        public ICollection<EmployeursAvalider> EmployeursAvalider { get; set; }
-        public ICollection<Offres> Offres { get; set; }
+        public Wilayas Wilaya { get; set; }[JsonIgnore]
+        public ICollection<CodesPostaux> CodesPostaux { get; set; }[JsonIgnore]
+        public ICollection<Demandeurs> Demandeurs { get; set; }[JsonIgnore]
+        public ICollection<DemandeursAvalider> DemandeursAvalider { get; set; }[JsonIgnore]
+        public ICollection<Employeurs> Employeurs { get; set; }[JsonIgnore]
+        public ICollection<EmployeursAvalider> EmployeursAvalider { get; set; }[JsonIgnore]
+        public ICollection<Offres> Offres { get; set; }[JsonIgnore]
         public ICollection<SecteursUrbains> SecteursUrbains { get; set; }
     }
 }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 
 namespace RapprocheWebApi.Entities.Models
@@ -14,67 +15,67 @@ namespace RapprocheWebApi.Entities.Models
             Offres = new HashSet<Offres>();
             Visites = new HashSet<Visites>();
         }
-
-        public Guid EmployeurId { get; set; }
-        public string Numero { get; set; }
-        public Guid? EntrepriseMereId { get; set; }
-        public bool Actif { get; set; }
+        [JsonIgnore]
+        public Guid EmployeurId { get; set; }[JsonIgnore]
+        public string Numero { get; set; }[JsonIgnore]
+        public Guid? EntrepriseMereId { get; set; }[JsonIgnore]
+        public bool Actif { get; set; }[JsonIgnore]
         public string Adresse { get; set; }
-        public string RaisonSociale { get; set; }
-        public string NumeroRc { get; set; }
-        public Guid StatutJuridiqueId { get; set; }
-        public bool EntrepriseEtrangere { get; set; }
-        public Guid SecteurActiviteId { get; set; }
-        public Guid BrancheActiviteId { get; set; }
-        public string Email { get; set; }
-        public string Fax { get; set; }
-        public string Telephone { get; set; }
-        public string Mobile { get; set; }
-        public Guid WilayaId { get; set; }
-        public Guid CommuneId { get; set; }
-        public Guid PaysId { get; set; }
-        public string Responsable { get; set; }
-        public string Fonction { get; set; }
-        public string AutresIndications { get; set; }
-        public string CauseDesactivation { get; set; }
-        public DateTime DateInscription { get; set; }
-        public string Rib { get; set; }
-        public short NombreEmployesNonDaip { get; set; }
-        public short NombreEmployesDaipenCours { get; set; }
-        public short NombreEmployesCta { get; set; }
-        public short NombreEmployesClassique { get; set; }
-        public string CompteBancaire { get; set; }
-        public string DenomnationCommerciale { get; set; }
-        public byte Position { get; set; }
-        public string Nif { get; set; }
-        public DateTime? DateInscriptionCnas { get; set; }
-        public DateTime? DateDebutActivite { get; set; }
-        public string CodeAgenceCnrss { get; set; }
-        public Guid? CodePostalId { get; set; }
-        public Guid SecteurJuridiqueId { get; set; }
-        public Guid IntervenantUserId { get; set; }
-        public short? TypeEmployeur { get; set; }
-        public bool? IsGeneratedByAnem { get; set; }
-        public short? TypeCreationEmployeur { get; set; }
-        public string NumeroOld { get; set; }
-        public bool? ByOnline { get; set; }
-        public DateTime? DateEnregistrement { get; set; }
+        public string RaisonSociale { get; set; }[JsonIgnore]
+        public string NumeroRc { get; set; }[JsonIgnore]
+        public Guid StatutJuridiqueId { get; set; }[JsonIgnore]
+        public bool EntrepriseEtrangere { get; set; }[JsonIgnore]
+        public Guid SecteurActiviteId { get; set; }[JsonIgnore]
+        public Guid BrancheActiviteId { get; set; }[JsonIgnore]
+        public string Email { get; set; }[JsonIgnore]
+        public string Fax { get; set; }[JsonIgnore]
+        public string Telephone { get; set; }[JsonIgnore]
+        public string Mobile { get; set; }[JsonIgnore]
+        public Guid WilayaId { get; set; }[JsonIgnore]
+        public Guid CommuneId { get; set; }[JsonIgnore]
+        public Guid PaysId { get; set; }[JsonIgnore]
+        public string Responsable { get; set; }[JsonIgnore]
+        public string Fonction { get; set; }[JsonIgnore]
+        public string AutresIndications { get; set; }[JsonIgnore]
+        public string CauseDesactivation { get; set; }[JsonIgnore]
+        public DateTime DateInscription { get; set; }[JsonIgnore]
+        public string Rib { get; set; }[JsonIgnore]
+        public short NombreEmployesNonDaip { get; set; }[JsonIgnore]
+        public short NombreEmployesDaipenCours { get; set; }[JsonIgnore]
+        public short NombreEmployesCta { get; set; }[JsonIgnore]
+        public short NombreEmployesClassique { get; set; }[JsonIgnore]
+        public string CompteBancaire { get; set; }[JsonIgnore]
+        public string DenomnationCommerciale { get; set; }[JsonIgnore]
+        public byte Position { get; set; }[JsonIgnore]
+        public string Nif { get; set; }[JsonIgnore]
+        public DateTime? DateInscriptionCnas { get; set; }[JsonIgnore]
+        public DateTime? DateDebutActivite { get; set; }[JsonIgnore]
+        public string CodeAgenceCnrss { get; set; }[JsonIgnore]
+        public Guid? CodePostalId { get; set; }[JsonIgnore]
+        public Guid SecteurJuridiqueId { get; set; }[JsonIgnore]
+        public Guid IntervenantUserId { get; set; }[JsonIgnore]
+        public short? TypeEmployeur { get; set; }[JsonIgnore]
+        public bool? IsGeneratedByAnem { get; set; }[JsonIgnore]
+        public short? TypeCreationEmployeur { get; set; }[JsonIgnore]
+        public string NumeroOld { get; set; }[JsonIgnore]
+        public bool? ByOnline { get; set; }[JsonIgnore]
+        public DateTime? DateEnregistrement { get; set; }[JsonIgnore]
 
-        public BranchesActivites BrancheActivite { get; set; }
-        public CodesPostaux CodePostal { get; set; }
-        public Communes Commune { get; set; }
-        public Employeurs EntrepriseMere { get; set; }
-        public Intervenants IntervenantUser { get; set; }
-        public Pays Pays { get; set; }
-        public SecteursActivites SecteurActivite { get; set; }
-        public SecteursJuridiques SecteurJuridique { get; set; }
-        public StatutsJuridiques StatutJuridique { get; set; }
-        public Wilayas Wilaya { get; set; }
-        public ICollection<Contacts> Contacts { get; set; }
-        public ICollection<EmployeurDocuments> EmployeurDocuments { get; set; }
-        public ICollection<Employeurs> InverseEntrepriseMere { get; set; }
-        public ICollection<NomenclatureActivites> NomenclatureActivites { get; set; }
-        public ICollection<Offres> Offres { get; set; }
+        public BranchesActivites BrancheActivite { get; set; }[JsonIgnore]
+        public CodesPostaux CodePostal { get; set; }[JsonIgnore]
+        public Communes Commune { get; set; }[JsonIgnore]
+        public Employeurs EntrepriseMere { get; set; }[JsonIgnore]
+        public Intervenants IntervenantUser { get; set; }[JsonIgnore]
+        public Pays Pays { get; set; }[JsonIgnore]
+        public SecteursActivites SecteurActivite { get; set; }[JsonIgnore]
+        public SecteursJuridiques SecteurJuridique { get; set; }[JsonIgnore]
+        public StatutsJuridiques StatutJuridique { get; set; }[JsonIgnore]
+        public Wilayas Wilaya { get; set; }[JsonIgnore]
+        public ICollection<Contacts> Contacts { get; set; }[JsonIgnore]
+        public ICollection<EmployeurDocuments> EmployeurDocuments { get; set; }[JsonIgnore]
+        public ICollection<Employeurs> InverseEntrepriseMere { get; set; }[JsonIgnore]
+        public ICollection<NomenclatureActivites> NomenclatureActivites { get; set; }[JsonIgnore]
+        public ICollection<Offres> Offres { get; set; }[JsonIgnore]
         public ICollection<Visites> Visites { get; set; }
     }
 }

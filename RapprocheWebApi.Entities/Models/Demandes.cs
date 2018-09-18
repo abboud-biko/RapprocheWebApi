@@ -16,31 +16,31 @@ namespace RapprocheWebApi.Entities.Models
             Postulations = new HashSet<Postulations>();
             Rapprochements = new HashSet<Rapprochements>();
         }
-
-        public Guid DemandeId { get; set; }
-        public Guid DemandeurId { get; set; }
-        public DateTime Date { get; set; }
-        public string Numero { get; set; }
-        public Guid StructureId { get; set; }
-        public short PorteeCompensation { get; set; }
-        public DateTime? DateAnnulationPrevue { get; set; }
-        public DateTime? DateCloture { get; set; }
-        public bool ClotureeParSysteme { get; set; }
-        public DateTime? DateCloturePrevue { get; set; }
-        public string CauseCloture { get; set; }
-        public short Mobilite { get; set; }
-        public Guid NatureDemandeId { get; set; }
-        public Guid TypeContratId { get; set; }
-        public Guid? DispositifId { get; set; }
-        public Guid MetierPrincipalId { get; set; }
-        public bool Actuelle { get; set; }
-        public short Etat { get; set; }
-        public int Anciennete { get; set; }
-        public decimal? SalaireSouhaite { get; set; }
-        public Guid UserId { get; set; }
-        public DateTime? DateMiseEnInstancePrevue { get; set; }
-        public Guid? FonctionActuelleId { get; set; }
-        public bool IsSatisfaite { get; set; }
+        [JsonIgnore]
+        public Guid DemandeId { get; set; }[JsonIgnore]
+        public Guid DemandeurId { get; set; }[JsonIgnore]
+        public DateTime Date { get; set; }[JsonIgnore]
+        public string Numero { get; set; }[JsonIgnore]
+        public Guid StructureId { get; set; }[JsonIgnore]
+        public short PorteeCompensation { get; set; }[JsonIgnore]
+        public DateTime? DateAnnulationPrevue { get; set; }[JsonIgnore]
+        public DateTime? DateCloture { get; set; }[JsonIgnore]
+        public bool ClotureeParSysteme { get; set; }[JsonIgnore]
+        public DateTime? DateCloturePrevue { get; set; }[JsonIgnore]
+        public string CauseCloture { get; set; }[JsonIgnore]
+        public short Mobilite { get; set; }[JsonIgnore]
+        public Guid NatureDemandeId { get; set; }[JsonIgnore]
+        public Guid TypeContratId { get; set; }[JsonIgnore]
+        public Guid? DispositifId { get; set; }[JsonIgnore]
+        public Guid MetierPrincipalId { get; set; }[JsonIgnore]
+        public bool Actuelle { get; set; }[JsonIgnore]
+        public short Etat { get; set; }[JsonIgnore]
+        public int Anciennete { get; set; }[JsonIgnore]
+        public decimal? SalaireSouhaite { get; set; }[JsonIgnore]
+        public Guid UserId { get; set; }[JsonIgnore]
+        public DateTime? DateMiseEnInstancePrevue { get; set; }[JsonIgnore]
+        public Guid? FonctionActuelleId { get; set; }[JsonIgnore]
+        public bool IsSatisfaite { get; set; }[JsonIgnore]
         public bool? ByOnline { get; set; }
 
         

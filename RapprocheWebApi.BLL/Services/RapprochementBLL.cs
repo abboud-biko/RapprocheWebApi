@@ -28,9 +28,17 @@ namespace RapprocheWebApi.BLL.Services
         public List<Rapprochements> GetRapprochementsByDate(DateTime date)
         {
             IQueryable<Rapprochements> rapprochements = _unitOfWork.Rapprochements.FindBy(
-                d => d.Offre.DateInscription >= date)
-                .Include(b => b.Offre)
+                d => d.Offre.DateInscription >= date 
+                && d.Demande.Demandeur.Email != null
+                && d.Demande.Demandeur.Email != "")
+                .Include(a => a.Offre)
                 .Include(a => a.Demande.Demandeur)
+                .Include(a => a.Offre.Commune.Wilaya)
+                .Include(a => a.Offre.Employeur)
+                .Include(a => a.Offre.MetierOffert)
+                .Include(a => a.Offre.NiveauInstruction)
+                .Include(a => a.Offre.NiveauQualification)
+                .Include(a => a.Offre.TypeContrat.CategorieContrat.Dispositif)
                 .Take(10);
             return rapprochements.ToList();
   
