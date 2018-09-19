@@ -14,21 +14,7 @@ namespace RapprocheWebApi.DAL.UnitOfWork
         {
             _context = new AnemContext();
         }
-
-        IRepository<Demandeurs> _demandeurs;
-
-        public IRepository<Demandeurs> Demandeurs
-        {
-            get
-            {
-                if (_demandeurs == null)
-                {
-                    _demandeurs = new Repository<Demandeurs>(_context);
-                }
-                return _demandeurs;
-            }
-        }
-
+        
         IRepository<Rapprochements> _rapprochements;
 
         public IRepository<Rapprochements> Rapprochements
