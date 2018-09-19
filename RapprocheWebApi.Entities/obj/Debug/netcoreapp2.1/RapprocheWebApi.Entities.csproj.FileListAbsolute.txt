@@ -19,3 +19,4 @@ C:\Users\ABBOUD Echeikh Bakir\source\repos\RapprocheWebApi\RapprocheWebApi.Entit
 C:\Users\ABBOUD Echeikh Bakir\source\repos\RapprocheWebApi\RapprocheWebApi.Entities\obj\Debug\netcoreapp2.1\RapprocheWebApi.Entities.AssemblyInfo.cs
 C:\Users\ABBOUD Echeikh Bakir\source\repos\RapprocheWebApi\RapprocheWebApi.Entities\obj\Debug\netcoreapp2.1\RapprocheWebApi.Entities.dll
 C:\Users\ABBOUD Echeikh Bakir\source\repos\RapprocheWebApi\RapprocheWebApi.Entities\obj\Debug\netcoreapp2.1\RapprocheWebApi.Entities.pdb
+C:\Users\ABBOUD Echeikh Bakir\source\repos\RapprocheWebApi\RapprocheWebApi.Entities\obj\Debug\netcoreapp2.1\RapprocheWebApi.Entities.csprojAssemblyReference.cache

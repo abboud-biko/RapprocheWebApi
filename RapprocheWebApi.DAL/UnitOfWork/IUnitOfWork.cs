@@ -8,7 +8,6 @@ namespace RapprocheWebApi.DAL.UnitOfWork
 {
     public interface IUnitOfWork
     {
-        IRepository<Demandeurs> Demandeurs { get; }
         IRepository<Rapprochements> Rapprochements { get; }
         void Dispose();
         void SaveChanges();

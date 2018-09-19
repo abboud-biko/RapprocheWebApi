@@ -25,9 +25,11 @@ namespace RapprocheWebApi.BLL.Services
                 && d.Offre.Etat == 1
                 && d.Offre.NombrePlacesLibres > 0
                 && d.Offre.IsRechercheActive == false
-                && d.Offre.IsValide == true
+                //&& d.Offre.IsValide == true
                 && d.Demande.Demandeur.Email != null
                 && d.Demande.Demandeur.Email != ""
+                && d.Demande.Actuelle == true
+                && (d.Demande.Etat == 1 || d.Demande.Etat == 2)
                 )
                 .Include(a => a.Offre)
                 .Include(a => a.Demande.Demandeur)
@@ -39,6 +41,5 @@ namespace RapprocheWebApi.BLL.Services
                 .Include(a => a.Offre.TypeContrat.CategorieContrat.Dispositif);
             return rapprochements.ToList();
         }
-
     }
 }
