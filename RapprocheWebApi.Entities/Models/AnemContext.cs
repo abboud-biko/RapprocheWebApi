@@ -140,7 +140,7 @@ namespace RapprocheWebApi.Entities.Models
             if (!optionsBuilder.IsConfigured)
             {
                 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. See http://go.microsoft.com/fwlink/?LinkId=723263 for guidance on storing connection strings.
-                optionsBuilder.UseSqlServer("User ID=AnemUser;Password=AnemUser@@;Server=10.16.100.183;Database=AnemSI;Trusted_Connection=false");
+                optionsBuilder.UseSqlServer("User ID=AnemUser;Password=AnemUser@@;Server=10.16.100.183;Database=Anem;Trusted_Connection=false");
             }
         }
 

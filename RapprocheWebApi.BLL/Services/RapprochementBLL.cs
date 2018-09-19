@@ -21,7 +21,6 @@ namespace RapprocheWebApi.BLL.Services
         public List<Rapprochements> GetRapprochementsByDate(DateTime date)
         {
             IQueryable<Rapprochements> rapprochements = _unitOfWork.Rapprochements.FindBy(
-
                 d => d.Offre.DateInscription >= date
                 && d.Offre.Etat == 1
                 && d.Offre.NombrePlacesLibres > 0
@@ -39,13 +38,8 @@ namespace RapprocheWebApi.BLL.Services
                 .Include(a => a.Offre.MetierOffert)
                 .Include(a => a.Offre.NiveauInstruction)
                 .Include(a => a.Offre.NiveauQualification)
-                .Include(a => a.Offre.TypeContrat.CategorieContrat.Dispositif)
-                .OrderBy(o => o.Demande.DemandeurId);
+                .Include(a => a.Offre.TypeContrat.CategorieContrat.Dispositif);
             return rapprochements.ToList();
         }
-
-
-        
-
     }
 }

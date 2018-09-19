@@ -14,7 +14,7 @@ namespace RapprocheWebApi.DAL.UnitOfWork
         {
             _context = new AnemContext();
         }
-        
+
         IRepository<Rapprochements> _rapprochements;
 
         public IRepository<Rapprochements> Rapprochements
