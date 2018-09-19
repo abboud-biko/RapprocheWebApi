@@ -39,7 +39,6 @@ namespace RapprocheWebApi
             services.AddCors();
 
             services.AddTransient<IUnitOfWork, UnitOfWork>();
-            services.AddScoped<IDemandeurBLL, DemandeurBLL>();
             services.AddScoped<IRapprochementBLL, RapprochementBLL>();
             services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
 

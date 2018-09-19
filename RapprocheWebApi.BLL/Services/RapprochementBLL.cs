@@ -16,25 +16,19 @@ namespace RapprocheWebApi.BLL.Services
         public RapprochementBLL(IUnitOfWork unitOfWork)
         {
             _unitOfWork = unitOfWork;
-
-        }
-
-        public List<Rapprochements> GetAllRapprochements()
-        {
-            return _unitOfWork.Rapprochements.GetAll().Include(b => b.Offre).Take(5).ToList();
-
         }
 
         public List<Rapprochements> GetRapprochementsByDate(DateTime date)
         {
             IQueryable<Rapprochements> rapprochements = _unitOfWork.Rapprochements.FindBy(
-                d => d.Offre.DateInscription >= date 
+                d => d.Offre.DateInscription >= date
                 && d.Offre.Etat == 1
                 && d.Offre.NombrePlacesLibres > 0
                 && d.Offre.IsRechercheActive == false
                 && d.Offre.IsValide == true
                 && d.Demande.Demandeur.Email != null
-                && d.Demande.Demandeur.Email != "")
+                && d.Demande.Demandeur.Email != ""
+                )
                 .Include(a => a.Offre)
                 .Include(a => a.Demande.Demandeur)
                 .Include(a => a.Offre.Commune.Wilaya)
@@ -42,12 +36,8 @@ namespace RapprocheWebApi.BLL.Services
                 .Include(a => a.Offre.MetierOffert)
                 .Include(a => a.Offre.NiveauInstruction)
                 .Include(a => a.Offre.NiveauQualification)
-                .Include(a => a.Offre.TypeContrat.CategorieContrat.Dispositif)
-                //.Take(10)
-                ;
+                .Include(a => a.Offre.TypeContrat.CategorieContrat.Dispositif);
             return rapprochements.ToList();
-  
-
         }
 
     }

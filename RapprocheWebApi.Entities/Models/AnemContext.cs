@@ -1,6 +1,7 @@
 ﻿using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.Extensions.Configuration;
 
 namespace RapprocheWebApi.Entities.Models
 {
@@ -138,8 +139,8 @@ namespace RapprocheWebApi.Entities.Models
         {
             if (!optionsBuilder.IsConfigured)
             {
-#warning To protect potentially sensitive information in your connection string, you should move it out of source code. See http://go.microsoft.com/fwlink/?LinkId=723263 for guidance on storing connection strings.
-                optionsBuilder.UseSqlServer("Server=10.16.100.183;User ID=AnemUser;Password=AnemUser@@; Database=Anem;Trusted_Connection=False;MultipleActiveResultSets=true");
+                #warning To protect potentially sensitive information in your connection string, you should move it out of source code. See http://go.microsoft.com/fwlink/?LinkId=723263 for guidance on storing connection strings.
+                optionsBuilder.UseSqlServer("User ID=AnemUser;Password=AnemUser@@;Server=10.16.100.183;Database=AnemSI;Trusted_Connection=false");
             }
         }
 
